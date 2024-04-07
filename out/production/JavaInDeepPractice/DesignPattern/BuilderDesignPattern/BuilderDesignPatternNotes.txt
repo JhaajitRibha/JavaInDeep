@@ -1,0 +1,14 @@
+while creating object when object contains many attributes there are many problem exists:
+
+1. we have to pass many arguments to create object.
+2. some parameters might be optional.
+3.factory class takes all responsbility of creating object , if the object is heavy then all complexity is
+part of factory class.
+
+so in builder pattern we create object step by step and finally return final object with desired value
+of attributes.
+
+
+The Builder design pattern is a creational design pattern used to construct complex objects step by step.
+ It's particularly useful when an object requires numerous parameters or configurations during construction,
+ and it's not feasible or desirable to have a constructor with an excessively long parameter list.

@@ -3,3 +3,10 @@ Observer Design Pattern:
 ->It is behaviour design pattern.
 ->In this if the subject changes its state all its dependent object notified the changes.
 ->One to many relation.
+
+
+The Observer Design Pattern is a behavioral design pattern that defines a
+one-to-many dependency between objects. In this pattern,
+when one object (the subject or observable) changes its state,
+all its dependents (observers) are notified and updated automatically.
+This pattern is commonly used to implement distributed event handling systems.

@@ -2,3 +2,9 @@ The concept is to copy an existing object rather than creating a new instance fr
 because creating a new object may be costly.
 This approach saves costly resource and time, especially when object creation is heavy process.
 
+The Prototype design pattern is a creational design pattern that is used to create new objects by
+ copying an existing object, known as the prototype.
+ Instead of creating new instances through a constructor,
+ the prototype pattern involves cloning an existing object and modifying it as needed.
+ This pattern is particularly useful when the construction of new objects is more
+ complex or resource-intensive, and copying an existing object is more efficient.

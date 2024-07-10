@@ -53,5 +53,7 @@ public class BiConsumerDemo {
         mapOfStrings.forEach(s3);
 
 
+
+
     }
 }

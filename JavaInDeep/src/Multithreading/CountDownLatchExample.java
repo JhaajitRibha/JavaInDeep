@@ -45,7 +45,7 @@ class Friends implements Runnable{
 
         System.out.println(this.name + " left the home at " + LocalDateTime.now());
         try {
-            Thread.sleep(35000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

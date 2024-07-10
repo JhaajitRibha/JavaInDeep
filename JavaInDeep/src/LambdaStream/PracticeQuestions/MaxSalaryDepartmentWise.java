@@ -19,6 +19,9 @@ public class MaxSalaryDepartmentWise {
                 new Employee("Sarah", 32, 75000, "IT")
         );
 
+
+
+
         employees.stream().collect(Collectors.groupingBy(
                 e->e.getDepartment(),Collectors.counting()
         )).forEach((e,v)-> System.out.println(e+ " " + v));

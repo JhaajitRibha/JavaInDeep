@@ -1,4 +1,4 @@
-package CodingPractice;
+package CodingPractice.Strings;
 
 public class PartTwo {
 

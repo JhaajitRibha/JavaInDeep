@@ -1,4 +1,4 @@
-package CodingPractice;
+package CodingPractice.Strings;
 
 
 import java.util.Arrays;

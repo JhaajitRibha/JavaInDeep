@@ -16,6 +16,10 @@ public class I4 {
                 new Employeee(1,"anand",26000,17,"m")
                 );
 
+       String maxSalaryPerson =
+               employees.stream().max(Comparator.comparingDouble(Employeee::getSalary)).get().getName();
+        System.out.println(maxSalaryPerson);
+
        String maxSalryPerson = employees.stream().collect(Collectors.toMap(e->e.getName(), e->e.getSalary()))
                .entrySet().stream().max(Comparator.comparingDouble(e->e.getValue())).get().getKey();
 

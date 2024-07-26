@@ -31,20 +31,20 @@ public class ModeOne {
 //
 //        s.forEach(e-> System.out.println(e.getKey()+ " "  + e.getValue()));
 
-        List<Map.Entry<String, Double>> k = transactions.stream().collect(
-                Collectors.collectingAndThen(
-                        Collectors.toMap(
-                                Transaction::getCategory,
-                                Transaction::getAmount,
-                                (o, p) -> p // Keep the latest value
-                        ),
-                        map -> map.entrySet().stream().collect(Collectors.toList())
-                )
+//        List<Map.Entry<String, Double>> k = transactions.stream().collect(
+//                Collectors.collectingAndThen(
+//                        Collectors.toMap(
+//                                Transaction::getCategory,
+//                                Transaction::getAmount,
+//                                (o, p) -> p // Keep the latest value
+//                        ),
+//                        map -> map.entrySet().stream().collect(Collectors.toList())
+//                )
 
-
-        );
-
-        k.forEach(entry -> System.out.println("Category: " + entry.getKey() + ", Amount: " + entry.getValue()));
+//
+//        );
+//
+//        k.forEach(entry -> System.out.println("Category: " + entry.getKey() + ", Amount: " + entry.getValue()));
 
 
     }

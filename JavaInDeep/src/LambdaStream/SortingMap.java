@@ -1,6 +1,7 @@
 package LambdaStream;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class SortingMap {
     public static void main(String[] args) {
@@ -27,6 +28,18 @@ public class SortingMap {
 
         System.out.println("****************");
         sortedMap.forEach((e,e2)-> System.out.println(e + " "  + e2));
+
+        Map<String, Integer> sortedByValueMap = unsortedMap.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,  // Key extractor
+                        Map.Entry::getValue,  // Value extractor
+                        (e1, e2) -> e1,  // Merge function, not needed here
+                        LinkedHashMap::new  // Supplier to ensure insertion order is maintained
+                ));
+
+
 
 
     }

@@ -13,6 +13,8 @@ public class CollectinAndThenInDetail {
                 Collectors.summingInt((e)->e.intValue()),(sum)->sum*sum
         ));
 
+        int res2 = numbers.stream().collect(Collectors.summingInt(e->e.intValue()));
+        System.out.println("res2 :" + res2);
         System.out.println(res);
 
         System.out.println("**************************");

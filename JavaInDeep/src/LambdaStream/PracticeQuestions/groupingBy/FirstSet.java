@@ -10,7 +10,7 @@ public class FirstSet {
     public static void main(String[] args) {
         List<String> strings = Arrays.asList("apple","banana","cherry","date","fig","grape");
         Map<Integer,List<String>> groupedStrings = strings.stream()
-                .collect(Collectors.groupingBy(String::length));
+                .collect(Collectors.groupingBy(e->e.length()));
 
         groupedStrings.entrySet().forEach(e-> System.out.println(e.getKey() + " " + e.getValue()));
 

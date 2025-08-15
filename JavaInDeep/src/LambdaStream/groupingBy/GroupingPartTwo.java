@@ -29,7 +29,10 @@ public class GroupingPartTwo {
                 );
 
 
-        Map<Integer,Student> collectors = studentList.stream().collect(Collectors.toMap(e->e.getParentSalary(), e->e,(existing,replacement)->replacement));
+        Map<Integer,Student> collectors = studentList.stream().collect(Collectors.toMap(e->e.getParentSalary(), e->e,(existing,replacement)->{
+            existing.setName(replacement.getName()+ " " + existing.getName());
+            return existing;
+        }));
 
         System.out.println("*8");
         collectors.entrySet().stream().forEach(e-> System.out.println(e.getKey()+ " : " + e.getValue()));

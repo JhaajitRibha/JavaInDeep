@@ -22,14 +22,14 @@ public class ModeOne {
         List<Transaction> transactionsList = transactions.stream().collect(Collectors.toList());
         transactionsList.stream().forEach((e)-> System.out.println(e));
 
-        Map<Double,String> transactionMap = transactions.stream().collect(Collectors.toMap(Transaction::getAmount,Transaction::getCategory));
+        Map<Double,String> transactionMap = transactions.stream().collect(Collectors.toMap(Transaction::getAmount,Transaction::getCategory,(e,p)->e+" , "+ p));
 
         transactionMap.entrySet().stream().forEach((e)-> System.out.println(e.getKey() + " : " + e.getValue()));
 
-//        List<Map.Entry<String,Double>> s = transactions.stream().collect(Collectors.collectingAndThen(Collectors.toMap(Transaction::getCategory,Transaction::getAmount,(o,p)->p)
-//                ,(maps)->maps.entrySet().stream().collect(Collectors.toList())));
+        List<Map.Entry<String,Double>> s = transactions.stream().collect(Collectors.collectingAndThen(Collectors.toMap(Transaction::getCategory,Transaction::getAmount,((o,p)->o+p))
+                ,(maps)->maps.entrySet().stream().collect(Collectors.toList())));
 //
-//        s.forEach(e-> System.out.println(e.getKey()+ " "  + e.getValue()));
+        s.forEach(e-> System.out.println(e.getKey()+ " "  + e.getValue()));
 
 //        List<Map.Entry<String, Double>> k = transactions.stream().collect(
 //                Collectors.collectingAndThen(

@@ -18,6 +18,7 @@ public class FutureExample{
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
 //        ExecutorService executorService = Executors.newSingleThreadExecutor();
+        Thread.currentThread().getState();
 
         ExecutorService executorService  = Executors.newFixedThreadPool(3);
 

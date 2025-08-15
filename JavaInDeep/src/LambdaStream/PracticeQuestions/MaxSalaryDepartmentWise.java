@@ -29,6 +29,7 @@ public class MaxSalaryDepartmentWise {
 
         System.out.println("****************");
 
+
         employees.stream().collect(Collectors.groupingBy(
                 e->e.getDepartment(),Collectors.maxBy(Comparator.comparingDouble(e->e.getSalary()))
         )).forEach((e,v)-> System.out.println(e + " " + v.get().getSalary()));
@@ -46,6 +47,9 @@ public class MaxSalaryDepartmentWise {
         System.out.println("IIII");
         resr.entrySet().stream().forEach((e)-> System.out.println(e.getKey()+ " "  +e.getValue()));
 
+        int[] arr = new int[5];
+
+        int[] arr2 = new int[]{1,3,5};
 
     }
 }

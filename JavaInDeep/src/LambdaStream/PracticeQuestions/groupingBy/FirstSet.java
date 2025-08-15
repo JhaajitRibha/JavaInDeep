@@ -1,6 +1,7 @@
 package LambdaStream.PracticeQuestions.groupingBy;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -9,6 +10,9 @@ import java.util.stream.Collectors;
 public class FirstSet {
     public static void main(String[] args) {
         List<String> strings = Arrays.asList("apple","banana","cherry","date","fig","grape");
+
+        strings.stream().max(Comparator.comparingInt(x->x.length())).ifPresent(System.out::println);
+
         Map<Integer,List<String>> groupedStrings = strings.stream()
                 .collect(Collectors.groupingBy(e->e.length()));
 

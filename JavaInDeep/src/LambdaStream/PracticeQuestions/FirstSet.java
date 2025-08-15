@@ -6,10 +6,7 @@ package LambdaStream.PracticeQuestions;
 //3.java program to find unique elements from string
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -26,7 +23,14 @@ public class FirstSet {
 
         String name = "ilovejavatechie";
 
+
+
+
         String[] nameArr = name.split("");
+
+        String firstNonRepeating = Arrays.stream(nameArr).collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new,Collectors.counting())).entrySet().stream()
+                .filter(e->e.getValue()==1).collect(Collectors.toList()).stream().findFirst().get().getKey();
+        System.out.println(firstNonRepeating);
 
         Arrays.stream(nameArr).forEach((e)-> System.out.println(e + " " + e.getClass().getName()));
 

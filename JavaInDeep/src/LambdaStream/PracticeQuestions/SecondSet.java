@@ -15,9 +15,12 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class SecondSet {
+
+
     public static void main(String[] args) {
 
         //1
+
 
         System.out.println("******************");
 
@@ -59,9 +62,19 @@ public class SecondSet {
 
         System.out.println(largestWord);
 
-        System.out.println("*************************");
+        String[] container = {""};
+         Arrays.stream(stringArray).forEach(e->{
+            if(e.length()>container[0].length()){
+                container[0]=e;
+            }
+        });
 
+        System.out.println(container[0]);
 
+        System.out.println("-------------------------");
+
+        String largestArray = Arrays.stream(stringArray).max((a,b)->Integer.compare(a.length(),b.length())).get();
+        System.out.println(largestArray);
 
 
 

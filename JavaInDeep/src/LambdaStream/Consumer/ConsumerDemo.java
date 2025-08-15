@@ -34,6 +34,8 @@ public class ConsumerDemo {
        listOfNumber.forEach(s);
         listOfNumber.forEach(s2);
 
+        
+
 
 
     }

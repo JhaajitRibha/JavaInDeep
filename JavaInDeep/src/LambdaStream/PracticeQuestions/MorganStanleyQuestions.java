@@ -100,5 +100,31 @@ public class MorganStanleyQuestions {
 
         //understand about linkedHashMap in detail how to use it with in steram api and why we write LinkedHashMap::new(other way)
 
+
+        System.out.println("*******************next phase************************");
+        String[] fruits = {"Apple", "Banana","Apple", "Cherry", "Date", "Elderberryy", "Fig", "Hrapes", "Honeydew"};
+        //get first character of each string in list of strings
+        List<Character> firstChars = Arrays.stream(fruits).map(x->x.charAt(0)).collect(Collectors.toList());
+        firstChars.forEach(x-> System.out.println(x));
+
+        System.out.println();
+        //get first string  in list of strings where string length is greater than 10
+        String stringWithLengthGreaterThanTen = Arrays.stream(fruits).distinct().collect(Collectors.toMap(
+                x->x,
+                String::length
+        )).entrySet().stream().filter(x->x.getValue()>10).map(x->x.getKey()).findFirst().get();
+
+        System.out.println(stringWithLengthGreaterThanTen);
+
+
+        //write a code using java streams to get the first character of each string from a list of strings and handle edge cases like empty strings
+        String[] words = {"Apple", "Banana", "", "Cherry", null, "Date"};
+
+        System.out.println("***************");
+        List<Character> firsts= Arrays.stream(words).distinct().filter(x->x!=null && !x.isEmpty()).map(x->x.charAt(0)).collect(Collectors.toList());
+        firsts.forEach(x-> System.out.println(x));
+
+
+
     }
 }

@@ -13,7 +13,7 @@ public class OptionalFeatureTraining {
                 .filter(e->e.isPresent())
                 .map(e->e.get())
                 .filter(e->!e.isEmpty()).
-                collect(Collectors.joining());
+                collect(Collectors.joining(","));
 
 
         return res;

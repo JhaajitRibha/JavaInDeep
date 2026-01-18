@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "age": 35,
+    "gender": "male",
+    "designation": "Software Developer",
+    "department": "IT",
+    "salary": 75000
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "age": 28,
+    "gender": "female",
+    "designation": "Business Analyst",
+    "department": "Marketing",
+    "salary": 60000
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "age": 45,
+    "gender": "male",
+    "designation": "Project Manager",
+    "department": "IT",
+    "salary": 90000
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "age": 32,
+    "gender": "female",
+    "designation": "UI/UX Designer",
+    "department": "Design",
+    "salary": 65000
+  },
+  {
+    "id": 5,
+    "name": "David Lee",
+    "age": 38,
+    "gender": "male",
+    "designation": "Data Analyst",
+    "department": "IT",
+    "salary": 80000
+  },
+  {
+    "id": 6,
+    "name": "Julia Martin",
+    "age": 29,
+    "gender": "female",
+    "designation": "Marketing Manager",
+    "department": "Marketing",
+    "salary": 75000
+  },
+  {
+    "id": 7,
+    "name": "Adam Clark",
+    "age": 41,
+    "gender": "male",
+    "designation": "Sales Manager",
+    "department": "Sales",
+    "salary": 95000
+  },
+  {
+    "id": 8,
+    "name": "Laura Wilson",
+    "age": 27,
+    "gender": "female",
+    "designation": "Graphic Designer",
+    "department": "Design",
+    "salary": 55000
+  },
+  {
+    "id": 9,
+    "name": "Peter Harris",
+    "age": 36,
+    "gender": "male",
+    "designation": "Software Developer",
+    "department": "IT",
+    "salary": 85000
+  },
+  {
+    "id": 10,
+    "name": "Jessica Lee",
+    "age": 31,
+    "gender": "female",
+    "designation": "HR Manager",
+    "department": "HR",
+    "salary": 70000
+  },
+  {
+    "id": 11,
+    "name": "Mark Brown",
+    "age": 40,
+    "gender": "male",
+    "designation": "Technical Lead",
+    "department": "IT",
+    "salary": 95000
+  },
+  {
+    "id": 12,
+    "name": "Emma White",
+    "age": 26,
+    "gender": "female",
+    "designation": "Content Writer",
+    "department": "Marketing",
+    "salary": 55000
+  },
+  {
+    "id": 13,
+    "name": "Alex Johnson",
+    "age": 33,
+    "gender": "male",
+    "designation": "Database Administrator",
+    "department": "IT",
+    "salary": 80000
+  },
+  {
+    "id": 14,
+    "name": "Olivia Davis",
+    "age": 30,
+    "gender": "female",
+    "designation": "Content Writer",
+    "department": "Marketing",
+    "salary": 50000
+  },
+  {
+    "id": 15,
+    "name": "Harish Gowda",
+    "age": 32,
+    "gender": "male",
+    "designation": "Developer",
+    "department": "IT",
+    "salary": 55000
+  },
+  {
+    "id": 16,
+    "name": "Mark Lewis",
+    "age": 35,
+    "gender": "male",
+    "designation": "Graphic Designer",
+    "department": "Design",
+    "salary": 56000
+  },
+  {
+    "id": 17,
+    "name": "Jane Perry",
+    "age": 28,
+    "gender": "female",
+    "designation": "Developer",
+    "department": "IT",
+    "salary": 45000
+  },
+  {
+    "id": 18,
+    "name": "Menaka KY",
+    "age": 25,
+    "gender": "female",
+    "designation": "Database Administrator",
+    "department": "IT",
+    "salary": 45000
+  },
+  {
+    "id": 19,
+    "name": "Shanvi Harish",
+    "age": 23,
+    "gender": "female",
+    "designation": "UI/UX Designer",
+    "department": "Design",
+    "salary": 35000
+  },
+  {
+    "id": 20,
+    "name": "Tim David",
+    "age": 35,
+    "gender": "male",
+    "designation": "Technical Lead",
+    "department": "IT",
+    "salary": 55000
+  }
+	
+]

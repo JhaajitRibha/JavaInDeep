@@ -1,0 +1,13 @@
+    Use thenApply when you want to perform a synchronous transformation on the result of a CompletableFuture.
+    Use thenCompose when the next computation depends on the result of the previous CompletableFuture and returns a new CompletableFuture.
+    Use thenCombine when you have two independent CompletableFutures and you want to combine their results when both are complete.
+
+difference between future and completable future
+
+    API Flexibility: CompletableFuture offers a richer API with methods like thenApply, thenCompose, thenCombine, etc., for chaining and combining tasks. Future has a more limited API.
+
+    Completion Handling: CompletableFuture provides more robust mechanisms for handling completion, including callback-based methods like thenAccept, thenApply, etc., which Future lacks.
+
+    Exception Handling: CompletableFuture provides methods like exceptionally and handle to handle exceptions explicitly, whereas with Future, exceptions need to be handled manually within the task.
+
+    Asynchronous Execution: CompletableFuture allows specifying a custom executor for task execution, whereas with Future, you're tied to the executor used to submit the task.

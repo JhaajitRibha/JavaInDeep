@@ -43,7 +43,6 @@ public class FirstSet {
 
         Map<String, List<String>> characterCounts2 = Arrays.stream(nameArr)
                 .collect(Collectors.groupingBy(e->e));
-
         System.out.println(characterCounts2);
 
         System.out.println("********************************");

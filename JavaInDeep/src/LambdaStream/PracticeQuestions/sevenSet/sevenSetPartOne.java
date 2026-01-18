@@ -60,6 +60,7 @@ public class sevenSetPartOne {
                         Optional::get
                 )
         ));
+        Map<String,List<Employee>> groupByDepartment = employees.stream().collect(Collectors.groupingBy(Employee::getDepartment));
         System.out.println();
         oldestByDept.forEach((x,y)-> System.out.println(x + "  : " + y));
         System.out.println();

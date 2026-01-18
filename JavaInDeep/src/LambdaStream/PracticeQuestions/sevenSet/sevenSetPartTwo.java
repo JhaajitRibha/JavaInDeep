@@ -130,6 +130,10 @@ public class sevenSetPartTwo {
                 )
         ));
 
+        System.out.println("**********second way*************");
+        Map<String,Optional<Employee>> res = employees.stream().collect(
+                Collectors.groupingBy(Employee::getDepartment,Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary))
+        ));
         highestSalaryDepartmentWise.forEach((x,y)-> System.out.println(x + " : " + y));
 
         //Find the list of employee and sort them by their salary
@@ -143,6 +147,11 @@ public class sevenSetPartTwo {
         System.out.println("*********sortedBySalary************");
         Employee secondLowestSalariedEmployee = employees.stream().sorted(Comparator.comparingDouble(Employee::getSalary)).skip(1).findFirst().get();
         System.out.println(secondLowestSalariedEmployee);
+
+        System.out.println("**********");
+
+
+
 
     }
 }

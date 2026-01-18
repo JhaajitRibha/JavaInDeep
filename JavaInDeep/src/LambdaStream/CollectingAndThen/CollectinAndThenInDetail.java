@@ -45,6 +45,8 @@ public class CollectinAndThenInDetail {
                 Collectors.toList(),list->list.stream().max(Comparator.comparingInt(e->e.intValue()))
         )).get();
 
+          int maxValue2 = values.stream().max(Comparator.comparingInt(e->e.intValue())).get();
+
         System.out.println(maxValue);
 
     }

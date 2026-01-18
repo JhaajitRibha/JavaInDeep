@@ -20,7 +20,6 @@ public class OptionalFeature {
         );
 
         optionalStrings.stream().filter(e->e.isPresent())
-                .map(e->e)
                 .filter(s->!s.isEmpty())
                 .collect(Collectors.toList()).forEach(e-> System.out.println(e));
     }
